@@ -1,0 +1,142 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  font-family: $font-primary;
+  font-weight: 100;
+  line-height: 1.45em;
+  color: $dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: auto;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $dark;
+  font-family: $font-secondary;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  // text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.47);
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+small, .font_small {
+  font-size: 0.75em;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  &:visited {
+    color: $gray;
+  }
+  &:hover, &:focus {
+    color: $gray;
+  }
+}
+
+input, select {
+  line-height: $fields-height;
+  height: $fields-height;
+}
+
+img {
+  max-width: 100%;
+}
+
+input, textarea {
+  font-size: 1em;
+  border-radius: 2px;
+  background: white;
+  color: $gray;
+  //border: 1px solid $gray !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.42);
+  padding-left: 1em;
+}
+
+textarea {
+  padding-top: 1em;
+}
+
+.container {
+  @include bleed;
+}
+
+body.single-format-standard,
+body.page-template-default {
+  .the-content {
+    padding-top: 2em;
+    padding-bottom: 3em;
+    img {
+      max-width: 100%;
+    }
+    @media screen and (min-width: $medium) {
+      max-width: $content-width;
+      width: $content-width;
+      margin: auto;
+    }
+  }
+}
+
+.dark {
+  @include dark;
+}
+
+.box {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+// ACF oEmbed Fields (don't edit this, just override)
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+

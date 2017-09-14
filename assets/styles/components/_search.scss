@@ -1,0 +1,25 @@
+#search-form {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  &:before {
+    font-family: 'FontAwesome', serif;
+    content: "\f002";
+    position: absolute;
+    left: .5em;
+    bottom: 0;
+    top: 0;
+    color: $gray;
+    display: flex;
+    align-items: center;
+  }
+}
+
+input#search-input {
+  width: 100%;
+  line-height: 0;
+  padding-left: 1.75em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 1em;
+}
